@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    RED.nodes.registerType('rfsender',{
+        category: 'output',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            pin: {value: 22, validate:RED.validators.number()},
+            protocol: {value:""}
+        },
+        inputs:1,
+        outputs:0,
+        icon: "file.png",
+        label: function() {
+            return this.name||"rfsender";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="rfsender">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-pin"><i class="icon-tag"></i> Pin</label>
+        <input type="text" id="node-input-pin" placeholder="Raspberry Pi pin">
+    </div>
+    <div class="form-row">
+        <label for="node-input-protocol"><i class="icon-tag"></i> Protocol</label>
+        <input type="text" id="node-input-protocol" placeholder="Protocol">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="rfsender">
+    <p>A node that sends data using a 433MHz transmitter on a RaspberryPi.</p>
+</script>

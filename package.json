@@ -1,0 +1,23 @@
+{
+    "name"          : "node-red-contrib-rfsender",
+    "version"       : "0.1.0",
+    "description"   : "Node-RED node that sends messages on 433Mhz",
+    "dependencies"  : {
+        "homeduino": "~0.0.46"
+    },
+    "repository" : {
+        "type":"git",
+        "url":"https://github.com/peterstrapp/node-red-contrib-rfsender"
+    },
+    "keywords": [ "node-red", "rf", "433" ],
+    "node-red"      : {
+        "nodes"     : {
+            "rfsender": "rfsender.js"
+        }
+    },
+    "author": {
+        "name": "Peter Strapp",
+        "email": "peter@strapp.co.uk",
+        "url": "http://www.strapp.co.uk"
+    }
+}
